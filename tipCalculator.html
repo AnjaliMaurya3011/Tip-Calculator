@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tipCalculator.css">
+    <title>Document</title>
+</head>
+<body>
+    <div  class="bg-container">
+    <div style="max-width: 550px; background-color: #e0e8f0;">
+        <img class="image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/tip-calculator-img.png"
+            alt="">
+        <h1 class="header">Tip Calculator</h1>
+        <div class="card1" style="padding: 20px;">
+            <p class="title">Bill Amount</p>
+            <input type="number" id="billAmount" class="userInput" placeholder="Please enter digits">
+            <p class="title">Percent Tip</p>
+            <input type="number" id="percentTip" class="userInput" placeholder="Please enter digits">
+            <p class="title">Tip Amount</p>
+            <div>
+            <p class="userInput" style="background-color: #ffffff; display:flex; flex-direction: column; justify-content:center; align-self: center;" id="tipAmount"></p>
+            <!-- <input type="number" id="tipAmount" class="userInput" > -->
+        </div>
+            <p class="title">Total</p>
+            <div class="userInput"  style="background-color: #ffffff; display:flex; flex-direction: column; justify-content:center; align-self: center;">
+            <p id="total" ></p>
+            <!-- <input type="number" id="total" class="userInput"> -->
+        </div>
+        </div>
+        <div style="display: flex;justify-content: center;">
+            <button class="btn" id="cal-btn" onclick="calucalte()">Calculate</button>
+            <p class="error" id="error-message"></p>
+        </div>
+    </div>
+</div>
+    <script src="tipCalculator.js"></script>
+</body>
+
+</html>
